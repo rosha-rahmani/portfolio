@@ -15,10 +15,14 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  
+  const handleNavClick = (sectionId) =>{
+    scroolToSection(sectionId)
+    setIsMenuOpen(false)
+  }
   return (
-    <div>
+    <div className='text-white'>
       NAVBAR
     </div>
   )
 }
+

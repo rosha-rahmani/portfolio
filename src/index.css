@@ -2,7 +2,7 @@
 @import "tailwindcss";
 
 @theme {
-    --font-family: 'Urbanist', sans-serif;
+    --font-display: 'Urbanist', sans-serif;
     --breakpoint-3xl: 1920px;
     --color-primary: #8DFF69;
 
@@ -13,7 +13,7 @@
         scroll-behavior: smooth;
     }
     body{
-        -webkit-fomt-smoothing: antialiased;
+        -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         background-color: #000000;
         color: #FFFFFF;
@@ -73,10 +73,10 @@
     /* Ulity Classes */
 
     .animate-fadeIn {
-        animation: fadeIn 0.5s ease-in-out infinite;
-        -webkit-animation: fadeIn 0.5s ease-in-out infinite;
-}
-    .animation-spin-slow{
+        animation: fadeIn 0.5s ease-in-out;
+        -webkit-animation: fadeIn 0.5s ease-in-out;
+    }
+    .animate-spin-slow{
         animation: spin 8s linear infinite;
     }
     @keyframes spin {

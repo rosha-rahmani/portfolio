@@ -1,11 +1,19 @@
 import { useEffect, useState } from "react";
 
-export const useScrollSpy = (sectionIds, offset = 100) => {
-  const [activeSection, setActiveSection] = useState("");
+export const useScrollSpy = (sectionIds, offset = 120) => {
+  const [activeSection, setActiveSection] = useState("home");
 
   useEffect(() => {
+    if (!Array.isArray(sectionIds) || sectionIds.length === 0) return;
+
     const handleScroll = () => {
       const scrollPosition = window.scrollY + offset;
+
+      // Default to "home" if we're near the top.
+      if (window.scrollY < 80) {
+        setActiveSection("home");
+        return;
+      }
 
       for (const sectionId of sectionIds) {
         const section = document.getElementById(sectionId);
@@ -13,7 +21,6 @@ export const useScrollSpy = (sectionIds, offset = 100) => {
 
         const sectionTop = section.offsetTop;
         const sectionHeight = section.offsetHeight;
-
         if (
           scrollPosition >= sectionTop &&
           scrollPosition < sectionTop + sectionHeight
@@ -32,14 +39,11 @@ export const useScrollSpy = (sectionIds, offset = 100) => {
   return activeSection;
 };
 
-// Smooth scroll to section
+// Smooth scroll to a section.
 export const scrollToSection = (sectionId, offset = 100) => {
   const section = document.getElementById(sectionId);
   if (!section) return;
 
-  const top = section.offsetTop - offset;
-  window.scrollTo({
-    top,
-    behavior: "smooth",
-  });
+  const top = Math.max(0, section.offsetTop - offset);
+  window.scrollTo({ top, behavior: "smooth" });
 };

@@ -4,7 +4,7 @@ export const projects = [
     title: "E-Commerce Platform",
     description:
       "Full-stack online shopping application with real-time inventory management, secure payment integration, and user authentication.",
-    image: "/images/projects/project3.png",
+    image: "/images/projects/project3.svg",
     category: "Full Stack",
     technologies: ["React", "Node.js", "MongoDB", "Stripe"],
     metrics: "40% increase in conversion",
@@ -17,7 +17,7 @@ export const projects = [
     title: "Task Management Dashboard",
     description:
       "Collaborative project management tool with drag-and-drop kanban boards, real-time updates, and team collaboration features.",
-    image: "/images/projects/project6.png",
+    image: "/images/projects/project6.svg",
     category: "Web Apps",
     technologies: ["React", "TypeScript", "Firebase", "Tailwind"],
     metrics: "500+ active users",
@@ -30,7 +30,7 @@ export const projects = [
     title: "Component Library",
     description:
       "Comprehensive React component library with 50+ customizable components, built with accessibility and performance in mind.",
-    image: "/images/projects/project1.png",
+    image: "/images/projects/project1.svg",
     category: "UI Components",
     technologies: ["React", "TypeScript", "Storybook", "CSS Modules"],
     metrics: "1K+ npm downloads",
@@ -43,7 +43,7 @@ export const projects = [
     title: "Social Media Analytics",
     description:
       "Real-time social media analytics dashboard with data visualization, sentiment analysis, and engagement tracking.",
-    image: "/images/projects/project5.png",
+    image: "/images/projects/project5.svg",
     category: "Web Apps",
     technologies: ["Next.js", "Chart.js", "PostgreSQL", "Redis"],
     metrics: "10K+ data points/day",
@@ -56,7 +56,7 @@ export const projects = [
     title: "Weather Forecast App",
     description:
       "Beautiful weather application with hourly forecasts, interactive maps, and location-based alerts.",
-    image: "/images/projects/project4.png",
+    image: "/images/projects/project4.svg",
     category: "Web Apps",
     technologies: ["React", "OpenWeather API", "Mapbox", "Tailwind"],
     metrics: "95% accuracy rate",
@@ -69,7 +69,7 @@ export const projects = [
     title: "Portfolio Template",
     description:
       "Modern, customizable portfolio template for developers and designers with dark mode and smooth animations.",
-    image: "/images/projects/project2.png",
+    image: "/images/projects/project2.svg",
     category: "UI Components",
     technologies: ["React", "Framer Motion", "Tailwind", "Vite"],
     metrics: "2K+ GitHub stars",
